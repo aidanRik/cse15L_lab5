@@ -35,3 +35,4 @@ Description of edit:
 To fix the bug, we need to handle the case where the elements being compared are equal. We should add both elements to the result list and increment both indices.  
 
 ## Part 2  
+In this lab I learned a lot of helpful commands I can use to navigate my desktop, my files, and my code more efficiently. I learned how useful and easy using jdb is to help look at different outputs of code at different lines in the code. I also learned how to use bash scripts to help make personalized commands that can help us in writing code.  
