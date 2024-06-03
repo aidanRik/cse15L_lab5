@@ -4,7 +4,7 @@
 ## Part 1  
 Post from student:  
 Hi everyone, I’m having trouble with the merge method in ListExamples.java. It doesn’t seem to return the correct merged list when I run my bash script to test it. Here is a screenshot of the test output and the relevant code snippet. I think that the problem might be with the way the indices are being handled, but I'm not sure how to confirm this.  
-![Image](ss11_lab5)
+![Image](ss11_lab5)  
 
 Response from Ta:  
 Hi, it looks like there might be an issue with how the merge method handles the elements from the two lists. Could you add some print statements inside the while loops to track the values of index1, index2, and the current elements being compared? This might give us more insight into where things are going wrong.  
