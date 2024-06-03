@@ -11,7 +11,7 @@ Hi, it looks like there might be an issue with how the merge method handles the 
 
 Students follow up:  
 Hi again, I added the print statements and ran the script. Here’s the new code:  
-![Image](ss22_lab5)
+![Image](ss22_lab5)  
 
 Heres the output:  
 `Comparing apple and banana
