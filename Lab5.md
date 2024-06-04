@@ -4,14 +4,14 @@
 ## Part 1  
 Post from student:  
 Hi everyone, I’m having trouble with the merge method in ListExamples.java. It doesn’t seem to return the correct merged list when I run my bash script to test it. Here is a screenshot of the test output and the relevant code snippet. I think that the problem might be with the way the indices are being handled, but I'm not sure how to confirm this.  
-![Image](ss11_lab5)  
+![Image](ss11_lab5.png)  
 
 Response from Ta:  
 Hi, it looks like there might be an issue with how the merge method handles the elements from the two lists. Could you add some print statements inside the while loops to track the values of index1, index2, and the current elements being compared? This might give us more insight into where things are going wrong.  
 
 Students follow up:  
 Hi again, I added the print statements and ran the script. Here’s the new code:  
-![Image](ss22_lab5)  
+![Image](ss22_lab5.png)  
 
 Heres the output:  
 `Comparing apple and banana
@@ -23,10 +23,10 @@ After adding the print statements, I realized that the issue is when the two lis
 
 Setup:  
 Contents of `ListExamples.java` before fixing the bug:  
-![Image](ss33_lab5)  
+![Image](ss33_lab5.png)  
 
 Contents of `test.sh` the bash scrpit to compile and run the test:  
-![Image](ss44_lab5)  
+![Image](ss44_lab5.png)  
 
 Command line to trigger the bug:  
 `bash test.sh`  
