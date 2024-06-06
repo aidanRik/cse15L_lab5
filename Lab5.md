@@ -15,13 +15,13 @@ When I run bash scripts/my_program.sh, I get the following output:
 ![Image](s4_lab5.png)  
 
 Response from Ta:  
-Hi there! Thanks for providing detailed information. It looks like you might be running into an issue with the working directory when your script executes the Java program. Could you try adding a command to print the current directory at the beginning of your bash script? Then could you run it again and share the output?  
+Hi there! Thanks for providing detailed information. Firstly, your javac and java lines in the script don't have the correct paths, they just have the final destination. You should check the paths they need to run. It also looks like you might be running into an issue with the working directory when your script executes the Java program. Could you try adding a command to print the current directory at the beginning of your bash script? Then could you run it again and share the output?  
 
 Students follow up:  
-I added the pwd command to my script. Here’s the updated script and the output:  
+I changed the paths for the two commands and added the pwd command to my script. Here’s the updated script and the output:  
 
-![Image](s5_lab5.png)  
-![Image](s6_lab5.png)  
+![Image](s55_lab5.png)  
+![Image](s66_lab5.png)  
 
 I think the script is being run from my home directory instead of the project directory. 
 
@@ -32,7 +32,7 @@ You can do this by adding a cd command to your script to change to the script’
 
 Student final response:  
 I added the cd command to my script and now it works! Heres the script:  
-![Image](s7_lab5.png)  
+![Image](s77_lab5.png)  
 Thank you so much for the help!  
 
 ## Part 2  
