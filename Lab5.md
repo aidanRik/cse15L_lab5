@@ -3,36 +3,37 @@
 
 ## Part 1  
 Post from student:  
-Hi everyone, I’m having trouble with the merge method in ListExamples.java. It doesn’t seem to return the correct merged list when I run my bash script to test it. Here is a screenshot of the test output and the relevant code snippet. I think that the problem might be with the way the indices are being handled, but I'm not sure how to confirm this.  
-![Image](ss11_lab5.png)  
+I'm having trouble with a Java program that is supposed to read input from a text file, process the data to count the number of words in the file, and print the word count to the terminal. I wrote a bash script to compile and run the program, but it seems like the program is not reading the input file correctly or processing the data as expected.  
+
+I think the issue might be with the file path or the way the script handles the arguments, but I’m not sure. Here is my setup:  
+
+![Image](s1_lab5.png)  
+![Image](s2_lab5.png)  
+![Image](s3_lab5.png)  
+
+When I run bash scripts/my_program.sh, I get the following output:  
+![Image](s4_lab5.png)  
 
 Response from Ta:  
-Hi, it looks like there might be an issue with how the merge method handles the elements from the two lists. Could you add some print statements inside the while loops to track the values of index1, index2, and the current elements being compared? This might give us more insight into where things are going wrong.  
+Hi there! Thanks for providing detailed information. It looks like you might be running into an issue with the working directory when your script executes the Java program. Could you try adding a command to print the current directory at the beginning of your bash script? Then could you run it again and share the output?  
 
 Students follow up:  
-Hi again, I added the print statements and ran the script. Here’s the new code:  
-![Image](ss22_lab5.png)  
+I added the pwd command to my script. Here’s the updated script and the output:  
 
-Heres the output:  
-`Comparing apple and banana
-Comparing apple and cherry
-Comparing banana and cherry
-Comparing date and cherry
-Comparing fig and cherry`  
-After adding the print statements, I realized that the issue is when the two lists have elements with the same value. The merge method adds the element from the second list and increments index2, but it doesn’t handle the duplicate value correctly, causing some elements to be missed or duplicated incorrectly.  
+![Image](s5_lab5.png)  
+![Image](s6_lab5.png)  
 
-Setup:  
-Contents of `ListExamples.java` before fixing the bug:  
-![Image](ss33_lab5.png)  
+I think the script is being run from my home directory instead of the project directory. 
 
-Contents of `test.sh` the bash scrpit to compile and run the test:  
-![Image](ss44_lab5.png)  
+TA final response:  
+Thanks for the output! It confirms that the script is being executed from your home directory, not the project directory. To fix this, you need to change your bash script to navigate to the correct directory before compiling and running your Java program.
 
-Command line to trigger the bug:  
-`bash test.sh`  
+You can do this by adding a cd command to your script to change to the script’s directory, then navigate to the project root. Good Luck!  
 
-Description of edit:  
-To fix the bug, we need to handle the case where the elements being compared are equal. We should add both elements to the result list and increment both indices.  
+Student final response:  
+I added the cd command to my script and now it works! Heres the script:  
+![Image](s7_lab5.png)  
+Thank you so much for the help!  
 
 ## Part 2  
 In this lab I learned a lot of helpful commands I can use to navigate my desktop, my files, and my code more efficiently. I learned how useful and easy using jdb is to help look at different outputs of code at different lines in the code. I also learned how to use bash scripts to help make personalized commands that can help us in writing code.  
